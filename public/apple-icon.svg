@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
+    <defs>
+        <linearGradient id="django-gradient-apple" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#092E20"/>
+            <stop offset="100%" style="stop-color:#0C4B33"/>
+        </linearGradient>
+    </defs>
+    <!-- Background rounded rect for iOS -->
+    <rect width="180" height="180" rx="40" fill="url(#django-gradient-apple)"/>
+    <!-- Django "D" shape - scaled and centered -->
+    <path d="M65 42h24c18.778 0 34 15.222 34 34v24c0 18.778-15.222 34-34 34H65V42z" fill="#fff"/>
+    <path d="M77 60h12c9.389 0 17 7.611 17 17v24c0 9.389-7.611 17-17 17H77V60z" fill="url(#django-gradient-apple)"/>
+    <!-- Rwanda colors accent -->
+    <rect x="55" y="130" width="23" height="8" rx="4" fill="#00A1DE"/>
+    <rect x="78" y="130" width="23" height="8" rx="4" fill="#FAD201"/>
+    <rect x="101" y="130" width="23" height="8" rx="4" fill="#20603D"/>
+</svg>

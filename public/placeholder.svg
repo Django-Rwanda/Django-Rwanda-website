@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" fill="none">
+    <defs>
+        <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#f1f5f9"/>
+            <stop offset="100%" style="stop-color:#e2e8f0"/>
+        </linearGradient>
+        <linearGradient id="django-green" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#092E20"/>
+            <stop offset="100%" style="stop-color:#0C4B33"/>
+        </linearGradient>
+    </defs>
+    <!-- Background -->
+    <rect width="1200" height="1200" fill="url(#bg-gradient)" rx="8"/>
+    <!-- Decorative grid pattern -->
+    <g opacity="0.1">
+        <line x1="0" y1="300" x2="1200" y2="300" stroke="#092E20" stroke-width="1"/>
+        <line x1="0" y1="600" x2="1200" y2="600" stroke="#092E20" stroke-width="1"/>
+        <line x1="0" y1="900" x2="1200" y2="900" stroke="#092E20" stroke-width="1"/>
+        <line x1="300" y1="0" x2="300" y2="1200" stroke="#092E20" stroke-width="1"/>
+        <line x1="600" y1="0" x2="600" y2="1200" stroke="#092E20" stroke-width="1"/>
+        <line x1="900" y1="0" x2="900" y2="1200" stroke="#092E20" stroke-width="1"/>
+    </g>
+    <!-- Central icon container -->
+    <circle cx="600" cy="540" r="180" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+    <!-- Django "D" icon -->
+    <g transform="translate(510, 450)">
+        <path d="M40 0h50c41.421 0 75 33.579 75 75v50c0 41.421-33.579 75-75 75H40V0z" fill="url(#django-green)"/>
+        <path d="M65 30h25c24.853 0 45 20.147 45 45v50c0 24.853-20.147 45-45 45H65V30z" fill="#fff"/>
+        <path d="M65 30h25c24.853 0 45 20.147 45 45v50c0 24.853-20.147 45-45 45H65V30z" fill="url(#django-green)" opacity="0.3"/>
+    </g>
+    <!-- Image icon indicator -->
+    <g transform="translate(540, 630)">
+        <rect x="0" y="0" width="120" height="90" rx="8" fill="#94a3b8" opacity="0.5"/>
+        <circle cx="35" cy="30" r="15" fill="#cbd5e1"/>
+        <path d="M10 75 L45 50 L75 70 L100 45 L110 60 L110 82 Q110 90 102 90 L18 90 Q10 90 10 82 Z" fill="#cbd5e1"/>
+    </g>
+    <!-- Rwanda colors accent bar -->
+    <g transform="translate(375, 780)">
+        <rect x="0" y="0" width="150" height="12" rx="6" fill="#00A1DE"/>
+        <rect x="150" y="0" width="150" height="12" rx="6" fill="#FAD201"/>
+        <rect x="300" y="0" width="150" height="12" rx="6" fill="#20603D"/>
+    </g>
+    <!-- Text placeholder -->
+    <text x="600" y="860" text-anchor="middle" font-family="system-ui, sans-serif" font-size="32" fill="#64748b">Django Rwanda</text>
+</svg>

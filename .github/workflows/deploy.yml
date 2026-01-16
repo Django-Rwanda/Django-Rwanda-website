@@ -44,9 +44,18 @@ jobs:
         run: yarn build
         env:
           NODE_ENV: production
+          GITHUB_ACTIONS: true
 
-      - name: List output directory
-        run: ls -la ./out || echo "out directory not found"
+      - name: Debug - List all directories
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Directory contents:"
+          ls -la
+          echo "Looking for out directory:"
+          ls -la ./out 2>/dev/null || echo "out not found"
+          echo "Looking for .next directory:"
+          ls -la ./.next 2>/dev/null || echo ".next not found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

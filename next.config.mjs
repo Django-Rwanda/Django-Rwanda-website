@@ -8,16 +8,13 @@ const __dirname = dirname(__filename)
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/Django-Rwanda-website' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Django-Rwanda-website/' : '',
+  basePath: process.env.GITHUB_ACTIONS ? '/Django-Rwanda-website' : '',
+  assetPrefix: process.env.GITHUB_ACTIONS ? '/Django-Rwanda-website/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
-  },
-  turbopack: {
-    root: resolve(__dirname),
   },
 }
 

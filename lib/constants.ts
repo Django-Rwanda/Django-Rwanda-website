@@ -5,6 +5,7 @@ export const navigationItems = [
   { label: "Workshops", href: "#workshops" },
   { label: "Events", href: "#events" },
   { label: "Open Source", href: "#open-source" },
+  { label: "Team", href: "#team" },
   { label: "Resources", href: "#resources" },
   { label: "Contact", href: "#contact" },
 ]
@@ -151,4 +152,49 @@ export const startupResources = [
     description: "Ideas and solutions for challenges specific to African communities.",
     icon: "💡",
   },
+]
+
+export const teamMembers = [
+  {
+    id: 1,
+    name: "Francis",
+    role: "Community Manager",
+    image: "/placeholder-user.svg",
+    bio: "Building connections and fostering an inclusive community environment.",
+  },
+  {
+    id: 2,
+    name: "Iradukunda Fils",
+    role: "Django Lead",
+    image: "/placeholder-user.svg",
+    bio: "Driving Django education and best practices across the community.",
+  },
+  {
+    id: 3,
+    name: "Jean Paul Elisa NIYOKWIZERWA",
+    role: "Open Source & Tech Lead",
+    image: "/placeholder-user.svg",
+    bio: "Championing open source contributions and technical excellence.",
+  },
+  {
+    id: 4,
+    name: "Josiane",
+    role: "Content & Media Lead",
+    image: "/placeholder-user.svg",
+    bio: "Creating engaging content and managing community communications.",
+  },
+  {
+    id: 5,
+    name: "Naphtal",
+    role: "Events & Program Coordinator",
+    image: "/placeholder-user.svg",
+    bio: "Organizing impactful events and programs for community growth.",
+  },
+  {
+    id: 6,
+    name: "Providence",
+    role: "Django Girls Community Lead",
+    image: "/placeholder-user.svg",
+    bio: "Empowering women in tech through Django Girls initiatives.",
+  }
 ]

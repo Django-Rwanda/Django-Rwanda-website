@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { Card } from "@/components/ui/card"
-import { Folder } from "lucide-react"
+import Link from "next/link";
+import { Card } from "@/src/components/ui/card";
+import { Folder } from "lucide-react";
 
 export const metadata = {
   title: "Sitemap | Django Rwanda Community",
   description: "Complete site structure and navigation",
-}
+};
 
 const sitemapSections = [
   {
@@ -62,15 +62,19 @@ const sitemapSections = [
       { label: "Sitemap", href: "/sitemap" },
     ],
   },
-]
+];
 
 export default function SitemapPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">Sitemap</h1>
-          <p className="text-foreground/70">Browse all pages and sections of Django Rwanda Community website</p>
+          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">
+            Sitemap
+          </h1>
+          <p className="text-foreground/70">
+            Browse all pages and sections of Django Rwanda Community website
+          </p>
         </div>
       </section>
 
@@ -86,7 +90,10 @@ export default function SitemapPage() {
                 <ul className="space-y-2">
                   {section.links.map((link, i) => (
                     <li key={i}>
-                      <Link href={link.href} className="text-sm text-primary hover:text-primary/80 transition-colors">
+                      <Link
+                        href={link.href}
+                        className="text-sm text-primary hover:text-primary/80 transition-colors"
+                      >
                         {link.label}
                       </Link>
                     </li>
@@ -98,5 +105,5 @@ export default function SitemapPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -2,6 +2,8 @@ import type React from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { Header } from "@/src/components/header";
+import { Footer } from "@/src/components/footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -45,8 +47,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="min-h-screen w-full overflow-x-hidden font-sans antialiased">
-        {children}
+      <body className="min-h-screen w-full overflow-x-hidden bg-background font-sans antialiased">
+        {/* Global grid pattern */}
+        <div className="pointer-events-none fixed inset-0 z-0 bg-[linear-gradient(to_right,var(--primary)_1px,transparent_1px),linear-gradient(to_bottom,var(--primary)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.05]" />
+        <div className="relative z-10 flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </div>
         <Analytics />
       </body>
     </html>

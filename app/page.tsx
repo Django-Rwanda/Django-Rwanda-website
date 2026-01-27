@@ -1,17 +1,14 @@
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { CommunitySection } from "@/components/community-section";
-import { WorkshopsSection } from "@/components/workshops-section";
-import { EventsSection } from "@/components/events-section";
-import { OpenSourceSection } from "@/components/open-source-section";
-import { TeamSection } from "@/components/team-section";
-import { ResourcesSection } from "@/components/resources-section";
-import { Footer } from "@/components/footer";
+import { Hero } from "@/src/components/hero";
+import { CommunitySection } from "@/src/components/community-section";
+import { WorkshopsSection } from "@/src/components/workshops-section";
+import { EventsSection } from "@/src/components/events-section";
+import { OpenSourceSection } from "@/src/components/open-source-section";
+import { TeamSection } from "@/src/components/team-section";
+import { ResourcesSection } from "@/src/components/resources-section";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
-      <Header />
+    <>
       <Hero />
       <CommunitySection />
       <WorkshopsSection />
@@ -19,7 +16,6 @@ export default function Home() {
       <OpenSourceSection />
       <TeamSection />
       <ResourcesSection />
-      <Footer />
-    </main>
+    </>
   );
 }

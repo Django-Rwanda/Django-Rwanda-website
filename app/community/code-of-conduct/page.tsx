@@ -1,10 +1,10 @@
-import { Card } from "@/components/ui/card"
-import Link from "next/link"
+import { Card } from "@/src/components/ui/card";
+import Link from "next/link";
 
 export const metadata = {
   title: "Code of Conduct | Django Rwanda Community",
   description: "Our community values and principles",
-}
+};
 
 const sections = [
   {
@@ -32,17 +32,22 @@ const sections = [
     content:
       "Violations of this code of conduct will be taken seriously and may result in temporary or permanent removal from the community. Reports should be sent to conduct@djangorwanda.dev.",
   },
-]
+];
 
 export default function CodeOfConductPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <Link href="/community" className="inline-flex items-center gap-1 text-primary hover:text-primary/80 mb-4">
+          <Link
+            href="/community"
+            className="inline-flex items-center gap-1 text-primary hover:text-primary/80 mb-4"
+          >
             ← Back to Community
           </Link>
-          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">Code of Conduct</h1>
+          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">
+            Code of Conduct
+          </h1>
           <p className="text-lg text-foreground/70">
             Our values and principles for a respectful and inclusive community.
           </p>
@@ -54,8 +59,12 @@ export default function CodeOfConductPage() {
           <div className="space-y-8">
             {sections.map((section, idx) => (
               <Card key={idx} className="border border-border/50 p-8">
-                <h2 className="mb-4 text-2xl font-bold text-foreground">{section.title}</h2>
-                {section.content && <p className="text-foreground/70 mb-4">{section.content}</p>}
+                <h2 className="mb-4 text-2xl font-bold text-foreground">
+                  {section.title}
+                </h2>
+                {section.content && (
+                  <p className="text-foreground/70 mb-4">{section.content}</p>
+                )}
                 {section.items && (
                   <ul className="space-y-2">
                     {section.items.map((item, i) => (
@@ -72,5 +81,5 @@ export default function CodeOfConductPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

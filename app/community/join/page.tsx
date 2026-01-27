@@ -1,12 +1,12 @@
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Check } from "lucide-react"
-import Link from "next/link"
+import { Card } from "@/src/components/ui/card";
+import { Button } from "@/src/components/ui/button";
+import { Check } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Join Community | Django Rwanda",
   description: "Become a member of Django Rwanda Community",
-}
+};
 
 const benefits = [
   "Access to exclusive workshops and training materials",
@@ -15,19 +15,25 @@ const benefits = [
   "Get mentorship from experienced developers",
   "Access to job board and opportunities",
   "Connect with 500+ community members",
-]
+];
 
 export default function JoinPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Link href="/community" className="inline-flex items-center gap-1 text-primary hover:text-primary/80 mb-4">
+          <Link
+            href="/community"
+            className="inline-flex items-center gap-1 text-primary hover:text-primary/80 mb-4"
+          >
             ← Back to Community
           </Link>
-          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">Join Django Rwanda</h1>
+          <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">
+            Join Django Rwanda
+          </h1>
           <p className="max-w-2xl text-lg text-foreground/70">
-            Be part of a vibrant community of African developers dedicated to innovation and learning.
+            Be part of a vibrant community of African developers dedicated to
+            innovation and learning.
           </p>
         </div>
       </section>
@@ -37,7 +43,9 @@ export default function JoinPage() {
           <div className="grid gap-12 md:grid-cols-2">
             {/* Benefits */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-foreground">Membership Benefits</h2>
+              <h2 className="mb-6 text-2xl font-bold text-foreground">
+                Membership Benefits
+              </h2>
               <Card className="border border-border/50 p-8">
                 <ul className="space-y-4">
                   {benefits.map((benefit, idx) => (
@@ -52,7 +60,9 @@ export default function JoinPage() {
 
             {/* Signup Form */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-foreground">Get Started</h2>
+              <h2 className="mb-6 text-2xl font-bold text-foreground">
+                Get Started
+              </h2>
               <Card className="border border-border/50 p-8 bg-gradient-to-br from-primary/5 to-accent/5">
                 <form className="space-y-4">
                   <input
@@ -76,7 +86,7 @@ export default function JoinPage() {
                     rows={4}
                     className="w-full rounded-lg border border-border bg-input px-4 py-2 text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary"
                   />
-                  <Button className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
+                  <Button variant="gradient" className="w-full">
                     Join Community
                   </Button>
                 </form>
@@ -86,5 +96,5 @@ export default function JoinPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

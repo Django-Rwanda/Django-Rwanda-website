@@ -1,11 +1,11 @@
-import { Card } from "@/components/ui/card"
-import { Users, BookOpen, Share2, Gift, ArrowRight } from "lucide-react"
-import Link from "next/link"
+import { Card } from "@/src/components/ui/card";
+import { Users, BookOpen, Share2, Gift, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export const metadata = {
   title: "Community | Django Rwanda",
   description: "Join the Django Rwanda Community and grow with us",
-}
+};
 
 const communityLinks = [
   {
@@ -40,18 +40,21 @@ const communityLinks = [
     icon: Gift,
     color: "from-primary/10 to-secondary/10",
   },
-]
+];
 
 export default function CommunityPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen">
       {/* Header */}
       <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-foreground md:text-5xl">Community</h1>
+            <h1 className="text-4xl font-bold text-foreground md:text-5xl">
+              Community
+            </h1>
             <p className="max-w-2xl text-lg text-foreground/70">
-              Join, learn, contribute, and grow with Django Rwanda. Choose your journey below.
+              Join, learn, contribute, and grow with Django Rwanda. Choose your
+              journey below.
             </p>
           </div>
         </div>
@@ -62,7 +65,7 @@ export default function CommunityPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2">
             {communityLinks.map((item) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <Link key={item.id} href={item.href}>
                   <Card
@@ -71,19 +74,23 @@ export default function CommunityPage() {
                     <div className="mb-4 inline-flex rounded-lg bg-background p-3">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="mb-2 text-2xl font-bold text-foreground">{item.title}</h3>
-                    <p className="mb-6 text-foreground/70">{item.description}</p>
+                    <h3 className="mb-2 text-2xl font-bold text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="mb-6 text-foreground/70">
+                      {item.description}
+                    </p>
                     <div className="flex items-center gap-2 text-primary font-medium">
                       Explore
                       <ArrowRight className="h-4 w-4" />
                     </div>
                   </Card>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }

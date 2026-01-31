@@ -1,10 +1,10 @@
-import { Hero } from "@/src/components/hero";
-import { CommunitySection } from "@/src/components/community-section";
-import { WorkshopsSection } from "@/src/components/workshops-section";
-import { EventsSection } from "@/src/components/events-section";
-import { OpenSourceSection } from "@/src/components/open-source-section";
-import { TeamSection } from "@/src/components/team-section";
-import { ResourcesSection } from "@/src/components/resources-section";
+import { Hero } from "@/src/components/home-sections/hero";
+import { CommunitySection } from "@/src/components/home-sections/community-section";
+import { WorkshopsSection } from "@/src/components/home-sections/workshops-section";
+import { EventsSection } from "@/src/components/home-sections/events-section";
+import { OpenSourceSection } from "@/src/components/home-sections/open-source-section";
+import { TeamSection } from "@/src/components/home-sections/team-section";
+import { ResourcesSection } from "@/src/components/home-sections/resources-section";
 
 export default function Home() {
   return (

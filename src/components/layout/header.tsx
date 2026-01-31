@@ -5,6 +5,7 @@ import { useState } from "react";
 import { navigationItems } from "@/src/lib/constants";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
+import { Logo } from "@/src/components/logo";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,14 +15,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-light text-primary-foreground font-bold">
-              D
-            </div>
-            <span className="hidden font-bold text-foreground sm:inline-block">
-              Django Rwanda
-            </span>
-          </Link>
+          <Logo size="lg" showText />
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">

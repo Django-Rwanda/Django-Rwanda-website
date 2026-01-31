@@ -84,7 +84,7 @@ export const events = [
   },
   {
     id: 2,
-    title: "Django Bootcamp - Q1 2025",
+    title: "Django Bootcamp - Q1 2026",
     date: "January 15 - March 15",
     time: "Flexible",
     location: "Online + In-person",
@@ -177,13 +177,6 @@ export const teamMembers = [
     role: "Open Source & Tech Lead",
     image: "/placeholder-user.svg",
     bio: "Championing open source contributions and technical excellence.",
-  },
-  {
-    id: 4,
-    name: "Josiane",
-    role: "Content & Media Lead",
-    image: "/placeholder-user.svg",
-    bio: "Creating engaging content and managing community communications.",
   },
   {
     id: 5,

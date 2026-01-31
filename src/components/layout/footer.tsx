@@ -1,6 +1,7 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 import { Mail, Github, Twitter } from "lucide-react";
+import { Logo } from "@/src/components/logo";
 
 export function Footer() {
   return (
@@ -9,12 +10,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary-light text-primary-foreground font-bold">
-                D
-              </div>
-              <span className="font-bold text-foreground">Django Rwanda</span>
-            </Link>
+            <Logo size="md" />
             <p className="text-sm text-foreground/60">
               Empowering African developers through Django, open source, and
               community-driven innovation.
@@ -144,7 +140,7 @@ export function Footer() {
         <div className="mt-12 border-t border-border/30 pt-8">
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <p className="text-sm text-foreground/60">
-              &copy; 2025 Django Rwanda Community. All rights reserved.
+              &copy; 2026 Django Rwanda Community. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link

@@ -2,8 +2,7 @@ import { id } from "date-fns/locale"
 
 // Community content constants
 export const navigationItems = [
-  { label: "Home", href: "#home" },
-  { label: "Community", href: "#community" },
+  { label: "Community", href: "community" },
   { label: "Workshops", href: "#workshops" },
   { label: "Events", href: "#events" },
   { label: "Open Source", href: "#open-source" },
@@ -126,33 +125,6 @@ export const openSourceProjects = [
     stars: 456,
     contributors: 42,
     url: "#",
-  },
-]
-
-export const startupResources = [
-  {
-    id: 1,
-    title: "Startup Toolkit",
-    description: "Essential resources and guides for launching tech startups in Africa.",
-    icon: "📚",
-  },
-  {
-    id: 2,
-    title: "Funding Directory",
-    description: "Connect with investors, grants, and accelerators supporting African tech.",
-    icon: "💰",
-  },
-  {
-    id: 3,
-    title: "Mentorship Network",
-    description: "Get guidance from experienced entrepreneurs and technical leaders.",
-    icon: "👥",
-  },
-  {
-    id: 4,
-    title: "Local Problem Solutions",
-    description: "Ideas and solutions for challenges specific to African communities.",
-    icon: "💡",
   },
 ]
 

@@ -4,7 +4,6 @@ import { WorkshopsSection } from "@/src/components/home-sections/workshops-secti
 import { EventsSection } from "@/src/components/home-sections/events-section";
 import { OpenSourceSection } from "@/src/components/home-sections/open-source-section";
 import { TeamSection } from "@/src/components/home-sections/team-section";
-import { ResourcesSection } from "@/src/components/home-sections/resources-section";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <EventsSection />
       <OpenSourceSection />
       <TeamSection />
-      <ResourcesSection />
     </>
   );
 }

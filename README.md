@@ -16,15 +16,15 @@
 
 ---
 
-## 📖 About
+## About
 
 The Django Rwanda Community website is a modern, full-featured platform built to connect, educate, and empower African developers passionate about Django and web development. It serves as the central hub for the Django Rwanda community, featuring workshops, events, open-source projects, and resources for entrepreneurs.
 
-### 🎯 Mission
+### Mission
 
 > *Django Rwanda Community is dedicated to fostering a vibrant, inclusive ecosystem of developers across Africa. We believe in the power of community, collaboration, and open-source innovation to solve local challenges and create global opportunities.*
 
-### 📊 Community Stats
+### Community Stats
 
 - **500+** Community Members
 - **50+** Events Hosted
@@ -32,9 +32,9 @@ The Django Rwanda Community website is a modern, full-featured platform built to
 
 ---
 
-## ✨ Features
+## Features
 
-### 🏠 **Homepage**
+### Homepage
 - Modern hero section with animated backgrounds
 - Community mission and values showcase
 - Featured workshops carousel
@@ -42,13 +42,13 @@ The Django Rwanda Community website is a modern, full-featured platform built to
 - Open-source projects showcase
 - Entrepreneur resources section
 
-### 👥 **Community**
+### Community
 - **Join Us** - Membership registration with benefits overview
 - **Code of Conduct** - Community guidelines and standards
 - **Contribute** - Guidelines for contributing to the community
 - **Sponsorship** - Partnership opportunities for organizations
 
-### 📚 **Workshops & Learning**
+### Workshops & Learning
 - Comprehensive Django workshops (Beginner to Advanced)
 - Workshop catalog with filtering by skill level
 - Detailed workshop pages with curriculum
@@ -62,32 +62,32 @@ The Django Rwanda Community website is a modern, full-featured platform built to
 | Building APIs with Django REST | Intermediate | 4 weeks |
 | Full-Stack Django & React | Advanced | 8 weeks |
 
-### 📅 **Events & Meetups**
+### Events & Meetups
 - Monthly meetups in Kigali
 - Quarterly bootcamps
 - Open Source Contribution Days
 - Event details with registration
 - Location and attendee information
 
-### 💻 **Open Source**
+### Open Source
 Featured community projects:
 - **Django-Africa** - Toolkit for localized Django apps for African markets
 - **Swahili CMS** - Content management for African media outlets
 - **Local Commerce** - E-commerce platform for African small businesses
 
-### 🚀 **Resources for Entrepreneurs**
+### Resources for Entrepreneurs
 - **Startup Toolkit** - Essential resources for launching tech startups
 - **Funding Directory** - Investors, grants, and accelerators
 - **Mentorship Network** - Connect with experienced entrepreneurs
 - **Local Problem Solutions** - Ideas for African community challenges
 
-### 🔐 **Authentication**
+### Authentication
 - User registration with interest selection
 - Social sign-up (Google, GitHub)
 - Secure login system
 - Terms of Service and Privacy Policy
 
-### 📱 **Additional Pages**
+### Additional Pages
 - Contact page with form
 - Privacy Policy
 - Terms of Service
@@ -97,7 +97,7 @@ Featured community projects:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Core Framework
 - **[Next.js 16](https://nextjs.org/)** - React framework with App Router
@@ -133,7 +133,7 @@ Featured community projects:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 django-rwanda-website/
@@ -194,7 +194,7 @@ django-rwanda-website/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -234,7 +234,7 @@ django-rwanda-website/
 
 ---
 
-## 🎨 UI Components
+## UI Components
 
 The project includes a comprehensive UI component library built with Radix UI primitives and styled with Tailwind CSS:
 
@@ -296,7 +296,7 @@ The project includes a comprehensive UI component library built with Radix UI pr
 
 ---
 
-## 🌐 Environment Variables
+## Environment Variables
 
 Create a `.env.local` file in the root directory:
 
@@ -309,7 +309,7 @@ NEXT_PUBLIC_VERCEL_ANALYTICS_ID=your-analytics-id
 
 ---
 
-## 📦 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -328,7 +328,7 @@ The output will be in the `.next` directory, ready for deployment to any Node.js
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions from developers of all skill levels! Here's how you can help:
 
@@ -349,21 +349,21 @@ Please read our [Code of Conduct](https://djangorwanda.dev/community/code-of-con
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📞 Contact
+## Contact
 
 **Django Rwanda Community**
 
-- 📧 Email: [hello@djangorwanda.dev](mailto:hello@djangorwanda.dev)
-- 📱 Phone: +250 (0) 788 123 456
-- 📍 Location: Kigali Innovation Hub, Kigali, Rwanda
-- 🐙 GitHub: [@djangorwanda](https://github.com/djangorwanda)
-- 🐦 Twitter: [@djangorwanda](https://twitter.com/djangorwanda)
+- Email: [hello@djangorwanda.dev](mailto:hello@djangorwanda.dev)
+- Phone: +250 (0) 788 123 456
+- Location: Kigali Innovation Hub, Kigali, Rwanda
+- GitHub: [@djangorwanda](https://github.com/djangorwanda)
+- Twitter: [@djangorwanda](https://twitter.com/djangorwanda)
 
 ---
 

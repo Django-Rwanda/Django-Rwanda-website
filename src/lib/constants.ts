@@ -24,7 +24,7 @@ export const communityMission = {
   title: "Our Mission",
   subtitle: "Building African Tech Leaders Through Django",
   description:
-    "Django Rwanda Community is dedicated to fostering a vibrant, inclusive ecosystem of developers across Africa. We believe in the power of community, collaboration, and open-source innovation to solve local challenges and create global opportunities.",
+    "Django Rwanda Community is dedicated to fostering a vibrant, inclusive ecosystem of developers across Africa. We believe in the power of community, collaboration, and innovation to solve local challenges and create global opportunities.",
   values: [
     {
       title: "Community First",
@@ -95,15 +95,6 @@ export const events = [
     description: "Intensive bootcamp to launch your Django journey and build real projects.",
     attendees: 200,
   },
-  {
-    id: 3,
-    title: "Open Source Contribution Day",
-    date: "Every 4th Thursday",
-    time: "6:00 PM",
-    location: "Online",
-    description: "Collaborate on open source projects and contribute to the Django ecosystem.",
-    attendees: 78,
-  },
 ]
 
 export const teamMembers = [
@@ -124,9 +115,9 @@ export const teamMembers = [
   {
     id: 3,
     name: "Jean Paul Elisa NIYOKWIZERWA",
-    role: "Open Source & Tech Lead",
+    role: "Tech Lead",
     image: "/placeholder-user.svg",
-    bio: "Championing open source contributions and technical excellence.",
+    bio: "Championing technical excellence and engineering best practices.",
   },
   {
     id: 5,

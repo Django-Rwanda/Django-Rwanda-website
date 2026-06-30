@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4">
             <Logo size="md" />
             <p className="text-sm text-foreground/60">
-              Empowering African developers through Django, open source, and
+              Empowering African developers through Django and
               community-driven innovation.
             </p>
             <div className="flex gap-3">

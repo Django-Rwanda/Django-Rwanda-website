@@ -1,6 +1,6 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
-import { Mail, Github, Twitter } from "lucide-react";
+import { Mail, Github, Twitter, MessageCircle } from "lucide-react";
 import { Logo } from "@/src/components/logo";
 import { communityLinks } from "@/src/lib/constants";
 
@@ -111,22 +111,24 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact CTA */}
+          {/* Get Involved */}
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Get Involved</h4>
             <p className="text-sm text-foreground/60">
-              Stay updated with the latest news and opportunities.
+              Join our WhatsApp community to connect with fellow developers and
+              stay updated on events and opportunities.
             </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 rounded-l-lg border border-border bg-input px-4 py-2 text-sm placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button variant="gradient" className="rounded-l-none">
-                Join
+            <Link
+              href={communityLinks.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex"
+            >
+              <Button variant="gradient" className="gap-2">
+                <MessageCircle className="h-4 w-4" />
+                Join WhatsApp Community
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
 

@@ -11,9 +11,10 @@ export const navigationItems = [
 ]
 
 // External community channels. No on-site backend — Join/Contact point here.
-// TODO: replace `join` with your real signup link (Google Form / WhatsApp / Discord invite).
+// TODO: replace `join` and `whatsapp` with your real invite links.
 export const communityLinks = {
   join: "https://github.com/djangorwanda",
+  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: paste the WhatsApp community invite link
   email: "hello@djangorwanda.dev",
   github: "https://github.com/djangorwanda",
   twitter: "https://twitter.com/djangorwanda",

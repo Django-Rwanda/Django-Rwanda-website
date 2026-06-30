@@ -87,24 +87,71 @@ export const workshops = [
   },
 ]
 
+// Events. `status` drives the Upcoming vs Past subsections.
+// For upcoming events `attendees` = people going; for past = people who attended.
+// `recapUrl` is optional — set it on past events to link a recording/photos/writeup.
 export const events = [
+  // ── Upcoming ────────────────────────────────────────────────────────────
   {
     id: 1,
-    title: "Monthly Meetup - Kigali",
-    date: "Every 2nd Saturday",
+    title: "Monthly Meetup — Kigali",
+    date: "Saturday, July 12, 2026",
     time: "2:00 PM",
     location: "Kigali Innovation Hub",
-    description: "Join fellow Django developers for networking, knowledge sharing, and coffee.",
+    description:
+      "Lightning talks, networking, and coffee with fellow Django developers.",
+    status: "upcoming",
     attendees: 45,
+    recapUrl: "",
   },
   {
     id: 2,
-    title: "Django Bootcamp - Q1 2026",
-    date: "January 15 - March 15",
+    title: "Building APIs with Django REST",
+    date: "Saturday, August 9, 2026",
+    time: "10:00 AM",
+    location: "Online",
+    description:
+      "A hands-on workshop on designing and shipping production-ready REST APIs.",
+    status: "upcoming",
+    attendees: 30,
+    recapUrl: "",
+  },
+  // ── Past ────────────────────────────────────────────────────────────────
+  {
+    id: 3,
+    title: "Intro to Django Meetup",
+    date: "June 14, 2026",
+    time: "2:00 PM",
+    location: "Kigali Innovation Hub",
+    description:
+      "Newcomers built their first Django app and met the community.",
+    status: "past",
+    attendees: 60,
+    recapUrl: "", // TODO: link recording / photos / writeup
+  },
+  {
+    id: 4,
+    title: "Django Bootcamp — Q1 2026",
+    date: "Jan 15 – Mar 15, 2026",
     time: "Flexible",
     location: "Online + In-person",
-    description: "Intensive bootcamp to launch your Django journey and build real projects.",
+    description:
+      "An intensive 8-week bootcamp where members built and shipped real Django projects.",
+    status: "past",
     attendees: 200,
+    recapUrl: "", // TODO: link recording / photos / writeup
+  },
+  {
+    id: 5,
+    title: "DjangoGirls Kigali",
+    date: "March 8, 2026",
+    time: "9:00 AM",
+    location: "Norrsken House Kigali",
+    description:
+      "A free, beginner-friendly workshop introducing women to web development with Django.",
+    status: "past",
+    attendees: 80,
+    recapUrl: "", // TODO: link recording / photos / writeup
   },
 ]
 

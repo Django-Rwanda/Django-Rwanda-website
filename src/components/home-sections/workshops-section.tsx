@@ -67,16 +67,18 @@ export function WorkshopsSection() {
                     {workshop.duration}
                   </div>
                 </div>
-
-                {/* CTA */}
-                <Link href={`/workshops/${workshop.id}`} className="block">
-                  <Button variant="gradient" className="w-full">
-                    Learn More
-                  </Button>
-                </Link>
               </div>
             </Card>
           ))}
+        </div>
+
+        {/* View all */}
+        <div className="mt-12 text-center">
+          <Link href="/workshops">
+            <Button variant="outline" size="lg">
+              View all workshops
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

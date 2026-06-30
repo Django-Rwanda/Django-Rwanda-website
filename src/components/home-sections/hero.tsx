@@ -1,6 +1,7 @@
 import { Button } from "@/src/components/ui/button";
 import { ArrowRight, Sparkles, Code2, Users, Zap } from "lucide-react";
 import Link from "next/link";
+import { communityLinks } from "@/src/lib/constants";
 
 export function Hero() {
   return (
@@ -50,23 +51,23 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link href="/get-started">
+            <Link href={communityLinks.join} target="_blank">
               <Button
                 size="lg"
                 variant="gradient"
                 className="text-lg shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
               >
-                Get Started
+                Join Community
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/resources">
+            <Link href="/workshops">
               <Button
                 size="lg"
                 variant="outline"
                 className="text-lg bg-transparent border-primary/30 hover:bg-primary/5 hover:border-primary/50"
               >
-                Explore Resources
+                Explore Workshops
               </Button>
             </Link>
           </div>

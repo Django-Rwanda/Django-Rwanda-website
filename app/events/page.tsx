@@ -1,4 +1,4 @@
-import { events } from "@/src/lib/constants";
+import { events, communityLinks } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import { Button } from "@/src/components/ui/button";
 import { Calendar, MapPin, Users, Clock, ArrowRight } from "lucide-react";
@@ -70,9 +70,13 @@ export default function EventsPage() {
                   </div>
 
                   {/* CTA */}
-                  <Link href={`/events/${event.id}`} className="md:w-auto">
+                  <Link
+                    href={communityLinks.join}
+                    target="_blank"
+                    className="md:w-auto"
+                  >
                     <Button variant="gradient" className="w-full md:w-auto">
-                      View Details
+                      Register
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>

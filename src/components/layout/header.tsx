@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { navigationItems } from "@/src/lib/constants";
+import { navigationItems, communityLinks } from "@/src/lib/constants";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/src/components/ui/button";
 import { Logo } from "@/src/components/logo";
@@ -19,7 +19,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden items-center gap-8 md:flex">
-            {navigationItems.slice(0, 6).map((item) => (
+            {navigationItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -32,10 +32,7 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden gap-2 md:flex">
-            <Link href="/auth/login">
-              <Button variant="outline">Sign In</Button>
-            </Link>
-            <Link href="/community/join">
+            <Link href={communityLinks.join} target="_blank">
               <Button variant="gradient">Join Community</Button>
             </Link>
           </div>
@@ -69,12 +66,11 @@ export function Header() {
                 </Link>
               ))}
               <div className="border-t border-border pt-4">
-                <Link href="/auth/login" className="block mb-2">
-                  <Button className="w-full bg-transparent" variant="outline">
-                    Sign In
-                  </Button>
-                </Link>
-                <Link href="/community/join">
+                <Link
+                  href={communityLinks.join}
+                  target="_blank"
+                  onClick={() => setIsMenuOpen(false)}
+                >
                   <Button variant="gradient" className="w-full">
                     Join Community
                   </Button>

@@ -1,4 +1,4 @@
-import { openSourceProjects } from "@/src/lib/constants";
+import { openSourceProjects, communityLinks } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import { Button } from "@/src/components/ui/button";
 import { Badge } from "@/src/components/ui/badge";
@@ -59,12 +59,18 @@ export function OpenSourceSection() {
               </div>
 
               {/* CTA */}
-              <Button
-                variant="outline"
-                className="w-full border-primary/30 hover:bg-primary/5 bg-transparent"
+              <Link
+                href={project.url && project.url !== "#" ? project.url : communityLinks.github}
+                target="_blank"
+                className="block"
               >
-                Contribute
-              </Button>
+                <Button
+                  variant="outline"
+                  className="w-full border-primary/30 hover:bg-primary/5 bg-transparent"
+                >
+                  Contribute
+                </Button>
+              </Link>
             </Card>
           ))}
         </div>
@@ -79,7 +85,7 @@ export function OpenSourceSection() {
             experienced developer, there&apos;s a place for you in our
             open-source community.
           </p>
-          <Link href="/community/contribute">
+          <Link href={communityLinks.github} target="_blank">
             <Button variant="gradient">Start Contributing Today</Button>
           </Link>
         </div>

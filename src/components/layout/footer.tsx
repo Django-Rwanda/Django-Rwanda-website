@@ -2,6 +2,7 @@ import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
 import { Mail, Github, Twitter } from "lucide-react";
 import { Logo } from "@/src/components/logo";
+import { communityLinks } from "@/src/lib/constants";
 
 export function Footer() {
   return (
@@ -84,7 +85,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/community/join"
+                  href={communityLinks.join}
+                  target="_blank"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Join Us
@@ -92,7 +94,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/community/code-of-conduct"
+                  href="/code-of-conduct"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Code of Conduct
@@ -100,18 +102,18 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/community/contribute"
+                  href="/#open-source"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
-                  Contribute
+                  Open Source
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/community/sponsorship"
+                  href="/#contact"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
-                  Sponsorship
+                  Contact
                 </Link>
               </li>
             </ul>
@@ -154,12 +156,6 @@ export function Footer() {
                 className="text-sm text-foreground/60 transition-colors hover:text-foreground"
               >
                 Terms
-              </Link>
-              <Link
-                href="/sitemap"
-                className="text-sm text-foreground/60 transition-colors hover:text-foreground"
-              >
-                Sitemap
               </Link>
             </div>
           </div>

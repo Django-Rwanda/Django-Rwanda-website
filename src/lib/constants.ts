@@ -1,15 +1,25 @@
-import { id } from "date-fns/locale"
-
 // Community content constants
+
+// Single-page navigation. Hrefs are absolute ("/#...") so the anchors also
+// resolve from the standalone /workshops and /events pages.
 export const navigationItems = [
-  { label: "Community", href: "community" },
-  { label: "Workshops", href: "#workshops" },
-  { label: "Events", href: "#events" },
-  { label: "Open Source", href: "#open-source" },
-  { label: "Team", href: "#team" },
-  { label: "Resources", href: "#resources" },
-  { label: "Contact", href: "#contact" },
+  { label: "Community", href: "/#community" },
+  { label: "Workshops", href: "/#workshops" },
+  { label: "Events", href: "/#events" },
+  { label: "Open Source", href: "/#open-source" },
+  { label: "Team", href: "/#team" },
+  { label: "Contact", href: "/#contact" },
 ]
+
+// External community channels. No on-site backend — Join/Contact point here.
+// TODO: replace `join` with your real signup link (Google Form / WhatsApp / Discord invite).
+export const communityLinks = {
+  join: "https://github.com/djangorwanda",
+  email: "hello@djangorwanda.dev",
+  github: "https://github.com/djangorwanda",
+  twitter: "https://twitter.com/djangorwanda",
+  location: "Kigali Innovation Hub, Kigali, Rwanda",
+}
 
 export const communityMission = {
   title: "Our Mission",

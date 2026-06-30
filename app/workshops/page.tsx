@@ -1,4 +1,4 @@
-import { workshops } from "@/src/lib/constants";
+import { workshops, communityLinks } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import { Button } from "@/src/components/ui/button";
 import { Badge } from "@/src/components/ui/badge";
@@ -75,9 +75,13 @@ export default function WorkshopsPage() {
                   </div>
 
                   {/* CTA */}
-                  <Link href={`/workshops/${workshop.id}`} className="mt-auto">
+                  <Link
+                    href={communityLinks.join}
+                    target="_blank"
+                    className="mt-auto"
+                  >
                     <Button variant="gradient" className="w-full">
-                      View Details
+                      Register
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </Link>

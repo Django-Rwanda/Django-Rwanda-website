@@ -56,7 +56,7 @@ export function EventsSection() {
                 </div>
 
                 {/* CTA */}
-                <Link href={communityLinks.join} target="_blank" className="block md:w-auto">
+                <Link href={communityLinks.whatsapp} target="_blank" className="block md:w-auto">
                   <Button variant="gradient" className="w-full md:w-auto">
                     Register
                   </Button>

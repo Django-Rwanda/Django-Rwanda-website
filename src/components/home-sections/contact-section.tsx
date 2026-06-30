@@ -66,7 +66,7 @@ export function ContactSection() {
           <p className="mb-6 text-foreground/70">
             Become part of a growing network of Django developers across Africa.
           </p>
-          <Link href={communityLinks.join} target="_blank">
+          <Link href={communityLinks.whatsapp} target="_blank">
             <Button variant="gradient" size="lg">
               Join Community
               <ArrowRight className="ml-2 h-5 w-5" />

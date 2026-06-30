@@ -17,9 +17,8 @@ export const navigationItems = [
 // TODO: replace the placeholder values below with the real ones.
 // ─────────────────────────────────────────────────────────────────────────────
 export const communityLinks = {
-  // Primary "Join Community" CTA (header, hero, team, events, contact)
-  join: "https://github.com/djangorwanda", // TODO: real signup/landing link
-  // WhatsApp community invite (footer "Get Involved")
+  // Primary "Join Community" entry point — drives every Join/Register CTA
+  // (header, hero, team, events, footer "Get Involved" + "Join Us").
   whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: real WhatsApp invite link
 
   // Social / code

@@ -51,7 +51,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link href={communityLinks.join} target="_blank">
+            <Link href={communityLinks.whatsapp} target="_blank">
               <Button
                 size="lg"
                 variant="gradient"

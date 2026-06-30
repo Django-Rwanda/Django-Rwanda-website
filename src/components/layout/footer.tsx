@@ -85,7 +85,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href={communityLinks.join}
+                  href={communityLinks.whatsapp}
                   target="_blank"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >

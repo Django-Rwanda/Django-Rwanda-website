@@ -32,7 +32,7 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden gap-2 md:flex">
-            <Link href={communityLinks.join} target="_blank">
+            <Link href={communityLinks.whatsapp} target="_blank">
               <Button variant="gradient">Join Community</Button>
             </Link>
           </div>
@@ -67,7 +67,7 @@ export function Header() {
               ))}
               <div className="border-t border-border pt-4">
                 <Link
-                  href={communityLinks.join}
+                  href={communityLinks.whatsapp}
                   target="_blank"
                   onClick={() => setIsMenuOpen(false)}
                 >

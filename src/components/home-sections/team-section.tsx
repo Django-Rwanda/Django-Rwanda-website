@@ -88,7 +88,7 @@ export function TeamSection() {
               the Django community in Rwanda.
             </p>
             <a
-              href={communityLinks.join}
+              href={communityLinks.whatsapp}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center rounded-lg bg-gradient-to-r from-primary to-primary-light px-6 py-3 font-medium text-primary-foreground transition-all hover:opacity-90"

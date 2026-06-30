@@ -6,7 +6,6 @@ export const navigationItems = [
   { label: "Community", href: "/#community" },
   { label: "Workshops", href: "/#workshops" },
   { label: "Events", href: "/#events" },
-  { label: "Open Source", href: "/#open-source" },
   { label: "Team", href: "/#team" },
   { label: "Contact", href: "/#contact" },
 ]
@@ -30,10 +29,6 @@ export const communityMission = {
     {
       title: "Community First",
       description: "We prioritize collaboration and mutual growth over competition.",
-    },
-    {
-      title: "Open Source",
-      description: "We believe in sharing knowledge and contributing to the global ecosystem.",
     },
     {
       title: "Innovation",
@@ -108,33 +103,6 @@ export const events = [
     location: "Online",
     description: "Collaborate on open source projects and contribute to the Django ecosystem.",
     attendees: 78,
-  },
-]
-
-export const openSourceProjects = [
-  {
-    id: 1,
-    title: "Django-Africa",
-    description: "A toolkit for building localized Django applications for African markets.",
-    stars: 342,
-    contributors: 28,
-    url: "#",
-  },
-  {
-    id: 2,
-    title: "Swahili CMS",
-    description: "A content management system built with Django, designed for African media outlets.",
-    stars: 189,
-    contributors: 15,
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "Local Commerce",
-    description: "E-commerce platform for small businesses and entrepreneurs across Africa.",
-    stars: 456,
-    contributors: 42,
-    url: "#",
   },
 ]
 

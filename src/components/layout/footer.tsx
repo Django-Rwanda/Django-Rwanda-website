@@ -102,14 +102,6 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/#open-source"
-                  className="text-sm text-foreground/60 transition-colors hover:text-foreground"
-                >
-                  Open Source
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#contact"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >

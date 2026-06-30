@@ -1,5 +1,5 @@
 import { Button } from "@/src/components/ui/button";
-import { ArrowRight, Sparkles, Code2, Users, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Users, Zap } from "lucide-react";
 import Link from "next/link";
 import { communityLinks } from "@/src/lib/constants";
 
@@ -73,7 +73,7 @@ export function Hero() {
           </div>
 
           {/* Stats with green styling */}
-          <div className="grid grid-cols-3 gap-4 pt-12 md:gap-8">
+          <div className="grid grid-cols-2 gap-4 pt-12 md:gap-8">
             <div className="group relative space-y-2 rounded-2xl border border-primary/10 bg-gradient-to-br from-primary/5 to-transparent p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative flex items-center justify-center gap-2">
@@ -96,18 +96,6 @@ export function Hero() {
               </div>
               <p className="relative text-sm text-foreground/60">
                 Events Hosted
-              </p>
-            </div>
-            <div className="group relative space-y-2 rounded-2xl border border-primary/10 bg-gradient-to-br from-primary/5 to-transparent p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex items-center justify-center gap-2">
-                <Code2 className="h-5 w-5 text-primary hidden sm:block" />
-                <span className="text-2xl font-bold text-primary md:text-3xl">
-                  20+
-                </span>
-              </div>
-              <p className="relative text-sm text-foreground/60">
-                Open Source Projects
               </p>
             </div>
           </div>

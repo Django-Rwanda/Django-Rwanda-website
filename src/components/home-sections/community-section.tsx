@@ -1,8 +1,8 @@
 import { communityMission } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
-import { Heart, Users, Lightbulb, Globe } from "lucide-react";
+import { Heart, Lightbulb, Globe } from "lucide-react";
 
-const valueIcons = [Heart, Users, Lightbulb, Globe];
+const valueIcons = [Heart, Lightbulb, Globe];
 
 export function CommunitySection() {
   return (
@@ -22,7 +22,7 @@ export function CommunitySection() {
         </div>
 
         {/* Values grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3">
           {communityMission.values.map((value, idx) => {
             const Icon = valueIcons[idx];
             return (

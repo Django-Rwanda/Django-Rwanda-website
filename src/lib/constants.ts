@@ -26,7 +26,7 @@ export const communityLinks = {
   twitter: "https://twitter.com/djangorwanda",
 
   // Contact details (raw — no mailto:/tel: prefix)
-  email: "hello@djangorwanda.dev",
+  email: "djangorwandacomunity@gmail.com",
   phone: "+250788000000", // TODO: real phone number (or remove usages)
   location: "Kigali Innovation Hub, Kigali, Rwanda",
 }

@@ -1,4 +1,4 @@
-import { teamMembers, communityLinks } from "@/src/lib/constants";
+import { teamMembers } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import Image from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
@@ -75,27 +75,6 @@ export function TeamSection() {
               </div>
             </Card>
           ))}
-        </div>
-
-        {/* Join the team CTA */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex flex-col items-center gap-4 rounded-2xl border border-border/50 bg-card p-8">
-            <h3 className="text-xl font-bold text-foreground">
-              Want to Join Our Team?
-            </h3>
-            <p className="max-w-md text-foreground/70">
-              We&apos;re always looking for passionate individuals to help grow
-              the Django community in Rwanda.
-            </p>
-            <a
-              href={communityLinks.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center rounded-lg bg-gradient-to-r from-primary to-primary-light px-6 py-3 font-medium text-primary-foreground transition-all hover:opacity-90"
-            >
-              Get Involved
-            </a>
-          </div>
         </div>
       </div>
     </section>

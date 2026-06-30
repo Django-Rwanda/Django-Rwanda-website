@@ -1,29 +1,45 @@
-import { id } from "date-fns/locale"
-
 // Community content constants
+
+// Single-page navigation. Hrefs are absolute ("/#...") so the anchors also
+// resolve from the standalone /workshops and /events pages.
 export const navigationItems = [
-  { label: "Community", href: "community" },
-  { label: "Workshops", href: "#workshops" },
-  { label: "Events", href: "#events" },
-  { label: "Open Source", href: "#open-source" },
-  { label: "Team", href: "#team" },
-  { label: "Resources", href: "#resources" },
-  { label: "Contact", href: "#contact" },
+  { label: "Community", href: "/#community" },
+  { label: "Workshops", href: "/#workshops" },
+  { label: "Events", href: "/#events" },
+  { label: "Team", href: "/#team" },
+  { label: "Contact", href: "/#contact" },
 ]
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SINGLE SOURCE OF TRUTH for every external link / contact channel on the site.
+// Edit a value here and it updates everywhere (header, hero, footer, contact…).
+// `email` and `phone` are raw values — components add the mailto:/tel: prefix.
+// TODO: replace the placeholder values below with the real ones.
+// ─────────────────────────────────────────────────────────────────────────────
+export const communityLinks = {
+  // Primary "Join Community" entry point — drives every Join/Register CTA
+  // (header, hero, team, events, footer "Get Involved" + "Join Us").
+  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: real WhatsApp invite link
+
+  // Social / code
+  github: "https://github.com/djangorwanda",
+  twitter: "https://twitter.com/djangorwanda",
+
+  // Contact details (raw — no mailto:/tel: prefix)
+  email: "hello@djangorwanda.dev",
+  phone: "+250788000000", // TODO: real phone number (or remove usages)
+  location: "Kigali Innovation Hub, Kigali, Rwanda",
+}
 
 export const communityMission = {
   title: "Our Mission",
   subtitle: "Building African Tech Leaders Through Django",
   description:
-    "Django Rwanda Community is dedicated to fostering a vibrant, inclusive ecosystem of developers across Africa. We believe in the power of community, collaboration, and open-source innovation to solve local challenges and create global opportunities.",
+    "Django Rwanda Community is dedicated to fostering a vibrant, inclusive ecosystem of developers across Africa. We believe in the power of community, collaboration, and innovation to solve local challenges and create global opportunities.",
   values: [
     {
       title: "Community First",
       description: "We prioritize collaboration and mutual growth over competition.",
-    },
-    {
-      title: "Open Source",
-      description: "We believe in sharing knowledge and contributing to the global ecosystem.",
     },
     {
       title: "Innovation",
@@ -90,42 +106,6 @@ export const events = [
     description: "Intensive bootcamp to launch your Django journey and build real projects.",
     attendees: 200,
   },
-  {
-    id: 3,
-    title: "Open Source Contribution Day",
-    date: "Every 4th Thursday",
-    time: "6:00 PM",
-    location: "Online",
-    description: "Collaborate on open source projects and contribute to the Django ecosystem.",
-    attendees: 78,
-  },
-]
-
-export const openSourceProjects = [
-  {
-    id: 1,
-    title: "Django-Africa",
-    description: "A toolkit for building localized Django applications for African markets.",
-    stars: 342,
-    contributors: 28,
-    url: "#",
-  },
-  {
-    id: 2,
-    title: "Swahili CMS",
-    description: "A content management system built with Django, designed for African media outlets.",
-    stars: 189,
-    contributors: 15,
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "Local Commerce",
-    description: "E-commerce platform for small businesses and entrepreneurs across Africa.",
-    stars: 456,
-    contributors: 42,
-    url: "#",
-  },
 ]
 
 export const teamMembers = [
@@ -146,9 +126,9 @@ export const teamMembers = [
   {
     id: 3,
     name: "Jean Paul Elisa NIYOKWIZERWA",
-    role: "Open Source & Tech Lead",
+    role: "Tech Lead",
     image: "/placeholder-user.svg",
-    bio: "Championing open source contributions and technical excellence.",
+    bio: "Championing technical excellence and engineering best practices.",
   },
   {
     id: 5,

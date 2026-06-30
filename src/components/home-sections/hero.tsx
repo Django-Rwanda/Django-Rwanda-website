@@ -1,6 +1,7 @@
 import { Button } from "@/src/components/ui/button";
-import { ArrowRight, Sparkles, Code2, Users, Zap } from "lucide-react";
+import { ArrowRight, Sparkles, Users, Zap } from "lucide-react";
 import Link from "next/link";
+import { communityLinks } from "@/src/lib/constants";
 
 export function Hero() {
   return (
@@ -50,29 +51,29 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link href="/get-started">
+            <Link href={communityLinks.whatsapp} target="_blank">
               <Button
                 size="lg"
                 variant="gradient"
                 className="text-lg shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all"
               >
-                Get Started
+                Join Community
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-            <Link href="/resources">
+            <Link href="/#workshops">
               <Button
                 size="lg"
                 variant="outline"
                 className="text-lg bg-transparent border-primary/30 hover:bg-primary/5 hover:border-primary/50"
               >
-                Explore Resources
+                Explore Workshops
               </Button>
             </Link>
           </div>
 
           {/* Stats with green styling */}
-          <div className="grid grid-cols-3 gap-4 pt-12 md:gap-8">
+          <div className="grid grid-cols-2 gap-4 pt-12 md:gap-8">
             <div className="group relative space-y-2 rounded-2xl border border-primary/10 bg-gradient-to-br from-primary/5 to-transparent p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative flex items-center justify-center gap-2">
@@ -95,18 +96,6 @@ export function Hero() {
               </div>
               <p className="relative text-sm text-foreground/60">
                 Events Hosted
-              </p>
-            </div>
-            <div className="group relative space-y-2 rounded-2xl border border-primary/10 bg-gradient-to-br from-primary/5 to-transparent p-6 transition-all hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary-light/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="relative flex items-center justify-center gap-2">
-                <Code2 className="h-5 w-5 text-primary hidden sm:block" />
-                <span className="text-2xl font-bold text-primary md:text-3xl">
-                  20+
-                </span>
-              </div>
-              <p className="relative text-sm text-foreground/60">
-                Open Source Projects
               </p>
             </div>
           </div>

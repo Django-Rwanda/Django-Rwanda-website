@@ -1,4 +1,4 @@
-import { events } from "@/src/lib/constants";
+import { events, communityLinks } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import { Button } from "@/src/components/ui/button";
 import { Calendar, MapPin, Users, Clock } from "lucide-react";
@@ -56,9 +56,9 @@ export function EventsSection() {
                 </div>
 
                 {/* CTA */}
-                <Link href={`/events/${event.id}`} className="block md:w-auto">
+                <Link href={communityLinks.whatsapp} target="_blank" className="block md:w-auto">
                   <Button variant="gradient" className="w-full md:w-auto">
-                    View Details
+                    Register
                   </Button>
                 </Link>
               </div>

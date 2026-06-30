@@ -1,4 +1,4 @@
-import { teamMembers } from "@/src/lib/constants";
+import { teamMembers, communityLinks } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import Image from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
@@ -88,7 +88,9 @@ export function TeamSection() {
               the Django community in Rwanda.
             </p>
             <a
-              href="/community/contribute"
+              href={communityLinks.whatsapp}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center rounded-lg bg-gradient-to-r from-primary to-primary-light px-6 py-3 font-medium text-primary-foreground transition-all hover:opacity-90"
             >
               Get Involved

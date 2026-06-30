@@ -1,7 +1,8 @@
 import { Button } from "@/src/components/ui/button";
 import Link from "next/link";
-import { Mail, Github, Twitter } from "lucide-react";
+import { Mail, Github, Twitter, MessageCircle } from "lucide-react";
 import { Logo } from "@/src/components/logo";
+import { communityLinks } from "@/src/lib/constants";
 
 export function Footer() {
   return (
@@ -12,26 +13,26 @@ export function Footer() {
           <div className="space-y-4">
             <Logo size="md" />
             <p className="text-sm text-foreground/60">
-              Empowering African developers through Django, open source, and
+              Empowering African developers through Django and
               community-driven innovation.
             </p>
             <div className="flex gap-3">
               <Link
-                href="https://github.com/djangorwanda"
+                href={communityLinks.github}
                 target="_blank"
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Github className="h-5 w-5" />
               </Link>
               <Link
-                href="https://twitter.com/djangorwanda"
+                href={communityLinks.twitter}
                 target="_blank"
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
-                href="mailto:hello@djangorwanda.dev"
+                href={`mailto:${communityLinks.email}`}
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Mail className="h-5 w-5" />
@@ -61,7 +62,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/workshops"
+                  href="/#workshops"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Workshops
@@ -69,7 +70,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/events"
+                  href="/#events"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Events
@@ -84,7 +85,8 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/community/join"
+                  href={communityLinks.whatsapp}
+                  target="_blank"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Join Us
@@ -92,7 +94,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/community/code-of-conduct"
+                  href="/code-of-conduct"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Code of Conduct
@@ -100,39 +102,33 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/community/contribute"
+                  href="/#contact"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
-                  Contribute
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/community/sponsorship"
-                  className="text-sm text-foreground/60 transition-colors hover:text-foreground"
-                >
-                  Sponsorship
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact CTA */}
+          {/* Get Involved */}
           <div className="space-y-4">
             <h4 className="font-semibold text-foreground">Get Involved</h4>
             <p className="text-sm text-foreground/60">
-              Stay updated with the latest news and opportunities.
+              Join our WhatsApp community to connect with fellow developers and
+              stay updated on events and opportunities.
             </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 rounded-l-lg border border-border bg-input px-4 py-2 text-sm placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button variant="gradient" className="rounded-l-none">
-                Join
+            <Link
+              href={communityLinks.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex"
+            >
+              <Button variant="gradient" className="gap-2">
+                <MessageCircle className="h-4 w-4" />
+                Join WhatsApp Community
               </Button>
-            </div>
+            </Link>
           </div>
         </div>
 
@@ -154,12 +150,6 @@ export function Footer() {
                 className="text-sm text-foreground/60 transition-colors hover:text-foreground"
               >
                 Terms
-              </Link>
-              <Link
-                href="/sitemap"
-                className="text-sm text-foreground/60 transition-colors hover:text-foreground"
-              >
-                Sitemap
               </Link>
             </div>
           </div>

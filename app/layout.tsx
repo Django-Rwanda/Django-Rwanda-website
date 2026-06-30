@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Django Rwanda Community",
   description:
-    "Empowering African developers through Django. Join our community for workshops, open source contributions, and collaborative innovation.",
+    "Empowering African developers through Django. Join our community for workshops, events, and collaborative innovation.",
   icons: {
     icon: [
       {

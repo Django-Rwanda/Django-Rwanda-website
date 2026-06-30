@@ -1,10 +1,8 @@
 import { workshops } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
-import { Button } from "@/src/components/ui/button";
 import { Badge } from "@/src/components/ui/badge";
 import { Clock, BarChart3 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export function WorkshopsSection() {
   return (
@@ -67,13 +65,6 @@ export function WorkshopsSection() {
                     {workshop.duration}
                   </div>
                 </div>
-
-                {/* CTA */}
-                <Link href={`/workshops/${workshop.id}`} className="block">
-                  <Button variant="gradient" className="w-full">
-                    Learn More
-                  </Button>
-                </Link>
               </div>
             </Card>
           ))}

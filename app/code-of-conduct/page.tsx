@@ -40,10 +40,10 @@ export default function CodeOfConductPage() {
       <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <Link
-            href="/community"
+            href="/"
             className="inline-flex items-center gap-1 text-primary hover:text-primary/80 mb-4"
           >
-            ← Back to Community
+            ← Back to Home
           </Link>
           <h1 className="text-4xl font-bold text-foreground md:text-5xl mb-4">
             Code of Conduct

@@ -19,7 +19,7 @@ export const navigationItems = [
 export const communityLinks = {
   // Primary "Join Community" entry point — drives every Join/Register CTA
   // (header, hero, team, events, footer "Get Involved" + "Join Us").
-  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: real WhatsApp invite link
+  whatsapp: "https://chat.whatsapp.com/GvIF9Mw1E2ZBf2S5wazfOo?mode=gi_t",
 
   // Social / code
   github: "https://github.com/djangorwanda",
@@ -87,24 +87,39 @@ export const workshops = [
   },
 ]
 
+// Events. `status` drives the Upcoming vs Past subsections.
+// Optional fields render only when set: `time`, `location`, `attendees` (>0),
+// `registerUrl` (upcoming — falls back to the WhatsApp community), and
+// `recapUrl` (past — links a recording / photos / writeup).
 export const events = [
+  // ── Upcoming ────────────────────────────────────────────────────────────
   {
     id: 1,
-    title: "Monthly Meetup - Kigali",
-    date: "Every 2nd Saturday",
+    title: "Python/Django July Meetup 2026",
+    date: "Friday, 24 July 2026",
     time: "2:00 PM",
-    location: "Kigali Innovation Hub",
-    description: "Join fellow Django developers for networking, knowledge sharing, and coffee.",
-    attendees: 45,
+    location: "GIZ Digital Transformation Center, Rwanda",
+    description:
+      "A community meetup for Python and Django developers — talks, networking, and hands-on sessions.",
+    status: "upcoming",
+    attendees: 0,
+    registerUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSetBc2-fgyo1IRR3_8hQ1mMDc-LCIwD5fWv7FxcsfXUTrf2Ww/viewform",
+    recapUrl: "",
   },
+  // ── Past ────────────────────────────────────────────────────────────────
   {
     id: 2,
-    title: "Django Bootcamp - Q1 2026",
-    date: "January 15 - March 15",
-    time: "Flexible",
-    location: "Online + In-person",
-    description: "Intensive bootcamp to launch your Django journey and build real projects.",
-    attendees: 200,
+    title: "Python & Django Rwanda Bootcamp",
+    date: "February – April 2026",
+    time: "",
+    location: "",
+    description:
+      "A 3-month intensive bootcamp covering Python and Django through hands-on, real-world projects.",
+    status: "past",
+    attendees: 0,
+    registerUrl: "",
+    recapUrl: "", // TODO: link recording / photos / writeup
   },
 ]
 

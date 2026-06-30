@@ -10,14 +10,25 @@ export const navigationItems = [
   { label: "Contact", href: "/#contact" },
 ]
 
-// External community channels. No on-site backend — Join/Contact point here.
-// TODO: replace `join` and `whatsapp` with your real invite links.
+// ─────────────────────────────────────────────────────────────────────────────
+// SINGLE SOURCE OF TRUTH for every external link / contact channel on the site.
+// Edit a value here and it updates everywhere (header, hero, footer, contact…).
+// `email` and `phone` are raw values — components add the mailto:/tel: prefix.
+// TODO: replace the placeholder values below with the real ones.
+// ─────────────────────────────────────────────────────────────────────────────
 export const communityLinks = {
-  join: "https://github.com/djangorwanda",
-  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: paste the WhatsApp community invite link
-  email: "hello@djangorwanda.dev",
+  // Primary "Join Community" CTA (header, hero, team, events, contact)
+  join: "https://github.com/djangorwanda", // TODO: real signup/landing link
+  // WhatsApp community invite (footer "Get Involved")
+  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: real WhatsApp invite link
+
+  // Social / code
   github: "https://github.com/djangorwanda",
   twitter: "https://twitter.com/djangorwanda",
+
+  // Contact details (raw — no mailto:/tel: prefix)
+  email: "hello@djangorwanda.dev",
+  phone: "+250788000000", // TODO: real phone number (or remove usages)
   location: "Kigali Innovation Hub, Kigali, Rwanda",
 }
 

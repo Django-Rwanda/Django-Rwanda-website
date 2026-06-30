@@ -18,21 +18,21 @@ export function Footer() {
             </p>
             <div className="flex gap-3">
               <Link
-                href="https://github.com/djangorwanda"
+                href={communityLinks.github}
                 target="_blank"
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Github className="h-5 w-5" />
               </Link>
               <Link
-                href="https://twitter.com/djangorwanda"
+                href={communityLinks.twitter}
                 target="_blank"
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link
-                href="mailto:hello@djangorwanda.dev"
+                href={`mailto:${communityLinks.email}`}
                 className="inline-flex rounded-lg bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Mail className="h-5 w-5" />

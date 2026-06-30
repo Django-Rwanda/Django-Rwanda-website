@@ -18,20 +18,26 @@ function EventMeta({ event }: { event: CommunityEvent }) {
         <Calendar className="h-4 w-4 text-primary" />
         <span>{event.date}</span>
       </div>
-      <div className="flex items-center gap-2 text-sm text-foreground/60">
-        <Clock className="h-4 w-4 text-primary" />
-        <span>{event.time}</span>
-      </div>
-      <div className="flex items-center gap-2 text-sm text-foreground/60">
-        <MapPin className="h-4 w-4 text-primary" />
-        <span>{event.location}</span>
-      </div>
-      <div className="flex items-center gap-2 text-sm text-foreground/60">
-        <Users className="h-4 w-4 text-primary" />
-        <span>
-          {event.attendees} {isPast ? "attended" : "going"}
-        </span>
-      </div>
+      {event.time && (
+        <div className="flex items-center gap-2 text-sm text-foreground/60">
+          <Clock className="h-4 w-4 text-primary" />
+          <span>{event.time}</span>
+        </div>
+      )}
+      {event.location && (
+        <div className="flex items-center gap-2 text-sm text-foreground/60">
+          <MapPin className="h-4 w-4 text-primary" />
+          <span>{event.location}</span>
+        </div>
+      )}
+      {event.attendees > 0 && (
+        <div className="flex items-center gap-2 text-sm text-foreground/60">
+          <Users className="h-4 w-4 text-primary" />
+          <span>
+            {event.attendees} {isPast ? "attended" : "going"}
+          </span>
+        </div>
+      )}
     </div>
   );
 }
@@ -46,7 +52,7 @@ function UpcomingCard({ event }: { event: CommunityEvent }) {
           <EventMeta event={event} />
         </div>
         <Link
-          href={communityLinks.whatsapp}
+          href={event.registerUrl || communityLinks.whatsapp}
           target="_blank"
           className="block md:w-auto"
         >

@@ -19,7 +19,7 @@ export const navigationItems = [
 export const communityLinks = {
   // Primary "Join Community" entry point — drives every Join/Register CTA
   // (header, hero, team, events, footer "Get Involved" + "Join Us").
-  whatsapp: "https://chat.whatsapp.com/your-invite-code", // TODO: real WhatsApp invite link
+  whatsapp: "https://chat.whatsapp.com/GvIF9Mw1E2ZBf2S5wazfOo?mode=gi_t",
 
   // Social / code
   github: "https://github.com/djangorwanda",
@@ -88,69 +88,37 @@ export const workshops = [
 ]
 
 // Events. `status` drives the Upcoming vs Past subsections.
-// For upcoming events `attendees` = people going; for past = people who attended.
-// `recapUrl` is optional — set it on past events to link a recording/photos/writeup.
+// Optional fields render only when set: `time`, `location`, `attendees` (>0),
+// `registerUrl` (upcoming — falls back to the WhatsApp community), and
+// `recapUrl` (past — links a recording / photos / writeup).
 export const events = [
   // ── Upcoming ────────────────────────────────────────────────────────────
   {
     id: 1,
-    title: "Monthly Meetup — Kigali",
-    date: "Saturday, July 12, 2026",
+    title: "Python/Django July Meetup 2026",
+    date: "Friday, 24 July 2026",
     time: "2:00 PM",
-    location: "Kigali Innovation Hub",
+    location: "GIZ Digital Transformation Center, Rwanda",
     description:
-      "Lightning talks, networking, and coffee with fellow Django developers.",
+      "A community meetup for Python and Django developers — talks, networking, and hands-on sessions.",
     status: "upcoming",
-    attendees: 45,
-    recapUrl: "",
-  },
-  {
-    id: 2,
-    title: "Building APIs with Django REST",
-    date: "Saturday, August 9, 2026",
-    time: "10:00 AM",
-    location: "Online",
-    description:
-      "A hands-on workshop on designing and shipping production-ready REST APIs.",
-    status: "upcoming",
-    attendees: 30,
+    attendees: 0,
+    registerUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSetBc2-fgyo1IRR3_8hQ1mMDc-LCIwD5fWv7FxcsfXUTrf2Ww/viewform",
     recapUrl: "",
   },
   // ── Past ────────────────────────────────────────────────────────────────
   {
-    id: 3,
-    title: "Intro to Django Meetup",
-    date: "June 14, 2026",
-    time: "2:00 PM",
-    location: "Kigali Innovation Hub",
+    id: 2,
+    title: "Python & Django Rwanda Bootcamp",
+    date: "February – April 2026",
+    time: "",
+    location: "",
     description:
-      "Newcomers built their first Django app and met the community.",
+      "A 3-month intensive bootcamp covering Python and Django through hands-on, real-world projects.",
     status: "past",
-    attendees: 60,
-    recapUrl: "", // TODO: link recording / photos / writeup
-  },
-  {
-    id: 4,
-    title: "Django Bootcamp — Q1 2026",
-    date: "Jan 15 – Mar 15, 2026",
-    time: "Flexible",
-    location: "Online + In-person",
-    description:
-      "An intensive 8-week bootcamp where members built and shipped real Django projects.",
-    status: "past",
-    attendees: 200,
-    recapUrl: "", // TODO: link recording / photos / writeup
-  },
-  {
-    id: 5,
-    title: "DjangoGirls Kigali",
-    date: "March 8, 2026",
-    time: "9:00 AM",
-    location: "Norrsken House Kigali",
-    description:
-      "A free, beginner-friendly workshop introducing women to web development with Django.",
-    status: "past",
-    attendees: 80,
+    attendees: 0,
+    registerUrl: "",
     recapUrl: "", // TODO: link recording / photos / writeup
   },
 ]

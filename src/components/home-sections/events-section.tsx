@@ -65,15 +65,6 @@ export function EventsSection() {
             </Card>
           ))}
         </div>
-
-        {/* View all */}
-        <div className="mt-12 text-center">
-          <Link href="/events">
-            <Button variant="outline" size="lg">
-              View all events
-            </Button>
-          </Link>
-        </div>
       </div>
     </section>
   );

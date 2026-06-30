@@ -1,10 +1,8 @@
 import { workshops } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
-import { Button } from "@/src/components/ui/button";
 import { Badge } from "@/src/components/ui/badge";
 import { Clock, BarChart3 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export function WorkshopsSection() {
   return (
@@ -70,15 +68,6 @@ export function WorkshopsSection() {
               </div>
             </Card>
           ))}
-        </div>
-
-        {/* View all */}
-        <div className="mt-12 text-center">
-          <Link href="/workshops">
-            <Button variant="outline" size="lg">
-              View all workshops
-            </Button>
-          </Link>
         </div>
       </div>
     </section>

@@ -62,7 +62,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/workshops"
+                  href="/#workshops"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Workshops
@@ -70,7 +70,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/events"
+                  href="/#events"
                   className="text-sm text-foreground/60 transition-colors hover:text-foreground"
                 >
                   Events

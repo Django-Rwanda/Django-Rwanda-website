@@ -137,12 +137,12 @@ export const teamMembers = [
     id: 3,
     name: "Jean Paul Elisa NIYOKWIZERWA",
     role: "Tech Lead",
-    image: "/jean.jpeg",
+    image: "/jean-origin.jpeg",
     bio: "Championing technical excellence and engineering best practices.",
     social: {
       twitter: "",
       linkedin: "https://www.linkedin.com/in/jean-paul-elisa/",
-      github: "",
+      github: "https://github.com/Ndevu12",
     },
   },
   {
@@ -159,7 +159,7 @@ export const teamMembers = [
     role: "Django Girls Community Lead",
     image: "/providance.jpeg",
     bio: "Empowering women in tech through Django Girls initiatives.",
-    social: { twitter: "", linkedin: "", github: "" },
+    social: { twitter: "", linkedin: "https://www.linkedin.com/in/uyitonnyeho-providence", github: "https://github.com/uyitoprovi" },
   },
   {
     id: 7,
@@ -175,6 +175,8 @@ export const teamMembers = [
     role: "Python Community Lead",
     image: "/SUnday.jpeg",
     bio: "Leading Python community",
-    social: { twitter: "", linkedin: "", github: "" },
+    social: { twitter: "", 
+      linkedin: "https://linkedin.com/in/sunday-ajayi", 
+      github: "https://github.com/suavelad" },
   },
 ]

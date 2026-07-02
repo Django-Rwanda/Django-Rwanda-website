@@ -28,7 +28,7 @@ export const communityLinks = {
   // Contact details (raw — no mailto:/tel: prefix)
   email: "djangorwandacomunity@gmail.com",
   phone: "+250788000000", // TODO: real phone number (or remove usages)
-  location: "Kigali Innovation Hub, Kigali, Rwanda",
+  location: "Norrsken House Kigali, Rwanda",
 }
 
 export const communityMission = {
@@ -123,47 +123,58 @@ export const events = [
   },
 ]
 
+// Team. `social` links render as icons only when a URL is set (empty = hidden).
 export const teamMembers = [
-  {
-    id: 1,
-    name: "Francis",
-    role: "Community Manager",
-    image: "/placeholder-user.svg",
-    bio: "Building connections and fostering an inclusive community environment.",
-  },
   {
     id: 2,
     name: "Iradukunda Fils",
     role: "Django Lead",
-    image: "/placeholder-user.svg",
+    image: "/fils.jpeg",
     bio: "Driving Django education and best practices across the community.",
+    social: { twitter: "", linkedin: "", github: "" },
   },
   {
     id: 3,
     name: "Jean Paul Elisa NIYOKWIZERWA",
     role: "Tech Lead",
-    image: "/placeholder-user.svg",
+    image: "/jean.jpeg",
     bio: "Championing technical excellence and engineering best practices.",
+    social: {
+      twitter: "",
+      linkedin: "https://www.linkedin.com/in/jean-paul-elisa/",
+      github: "",
+    },
   },
   {
     id: 5,
-    name: "Naphtal",
+    name: "Usabyuwera Naphtal",
     role: "Events & Program Coordinator",
-    image: "/placeholder-user.svg",
+    image: "/naphtar.jpeg",
     bio: "Organizing impactful events and programs for community growth.",
+    social: { twitter: "", linkedin: "", github: "" },
   },
   {
     id: 6,
-    name: "Providence",
+    name: "Uyitonnyeho Providence",
     role: "Django Girls Community Lead",
-    image: "/placeholder-user.svg",
+    image: "/providance.jpeg",
     bio: "Empowering women in tech through Django Girls initiatives.",
+    social: { twitter: "", linkedin: "", github: "" },
   },
   {
     id: 7,
     name: "Didas Mbarushimana",
     role: "Community Advocate",
-    image: "/placeholder-user.svg",
+    image: "/didas.jpeg",
     bio: "Promoting community values and advocating for member needs.",
-  }
+    social: { twitter: "", linkedin: "", github: "" },
+  },
+  {
+    id: 8,
+    name: "Sunday Ajay",
+    role: "Python Community Lead",
+    image: "/SUnday.jpeg",
+    bio: "Leading Python community",
+    social: { twitter: "", linkedin: "", github: "" },
+  },
 ]

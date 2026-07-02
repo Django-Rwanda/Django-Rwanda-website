@@ -1,7 +1,16 @@
 import { teamMembers } from "@/src/lib/constants";
 import { Card } from "@/src/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { Github, Linkedin, Twitter } from "lucide-react";
+
+const socialIcons = {
+  twitter: Twitter,
+  linkedin: Linkedin,
+  github: Github,
+} as const;
+
+type SocialKey = keyof typeof socialIcons;
 
 export function TeamSection() {
   return (
@@ -21,60 +30,64 @@ export function TeamSection() {
           </p>
         </div>
 
-        {/* Team grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {teamMembers.map((member) => (
-            <Card
-              key={member.id}
-              className="group relative overflow-hidden border border-border/50 bg-card transition-all hover:border-primary/50 hover:shadow-lg"
-            >
-              {/* Image */}
-              <div className="relative mx-auto mt-6 h-28 w-28 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary-light/20">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  className="object-cover transition-transform group-hover:scale-105"
-                />
-              </div>
+        {/* Team grid — smaller, equal-size cards */}
+        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
+          {teamMembers.map((member) => {
+            const links = (Object.keys(socialIcons) as SocialKey[])
+              .map((key) => ({ key, url: member.social?.[key] }))
+              .filter((s): s is { key: SocialKey; url: string } => Boolean(s.url));
 
-              {/* Content */}
-              <div className="space-y-3 p-6 text-center">
-                <div>
-                  <h3 className="text-lg font-bold text-foreground">
+            return (
+              <Card
+                key={member.id}
+                className="group flex h-full flex-col overflow-hidden border border-border/50 bg-card transition-all hover:border-primary/50 hover:shadow-lg"
+              >
+                {/* Square photo — anchored to top so faces aren't cropped */}
+                <div className="relative aspect-square w-full overflow-hidden bg-gradient-to-br from-primary/10 to-primary-light/10">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-1 flex-col p-4 text-center">
+                  <h3 className="text-sm font-bold text-foreground">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-medium text-primary">
+                  <p className="mt-0.5 text-xs font-medium text-primary">
                     {member.role}
                   </p>
-                </div>
+                  <p className="mt-2 line-clamp-2 text-xs text-foreground/60">
+                    {member.bio}
+                  </p>
 
-                <p className="text-sm text-foreground/70">{member.bio}</p>
-
-                {/* Social links placeholder */}
-                <div className="flex justify-center gap-3 pt-2">
-                  <button
-                    aria-label="Twitter"
-                    className="rounded-full bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
-                  >
-                    <Twitter className="h-4 w-4" />
-                  </button>
-                  <button
-                    aria-label="LinkedIn"
-                    className="rounded-full bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
-                  >
-                    <Linkedin className="h-4 w-4" />
-                  </button>
-                  <button
-                    aria-label="GitHub"
-                    className="rounded-full bg-muted p-2 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
-                  >
-                    <Github className="h-4 w-4" />
-                  </button>
+                  {links.length > 0 && (
+                    <div className="mt-auto flex justify-center gap-2 pt-3">
+                      {links.map(({ key, url }) => {
+                        const Icon = socialIcons[key];
+                        return (
+                          <Link
+                            key={key}
+                            href={url}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`${member.name} on ${key}`}
+                            className="rounded-full bg-muted p-1.5 text-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
+                          >
+                            <Icon className="h-3.5 w-3.5" />
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </div>
-            </Card>
-          ))}
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
